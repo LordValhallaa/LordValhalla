@@ -1,0 +1,245 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lord Valhalla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* ===== BANNER ===== */
+    .hero {
+      position: relative;
+      height: 260px; /* CONTROLA O TAMANHO */
+      overflow: hidden;
+      border-bottom: 1px solid #222;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.45);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin: 0;
+      letter-spacing: 3px;
+    }
+
+    .hero-text p {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    /* ===== PRODUTOS ===== */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #141414;
+      border: 1px solid #222;
+      border-radius: 6px;
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .card h3 {
+      margin: 15px 0 5px;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin: 4px 0;
+      color: #ccc;
+    }
+
+    .price {
+      color: #00ff88;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+    .btn {
+      display: block;
+      margin-top: 15px;
+      padding: 10px;
+      text-align: center;
+      background: #e1306c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      border-top: 1px solid #222;
+      margin-top: 40px;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 600px) {
+      .hero {
+        height: 200px;
+      }
+
+      .hero-text h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BANNER -->
+  <header class="hero">
+    <img src="https://avatars.githubusercontent.com/u/264638780?s=400&u=c0d4ea86e7d634ce293b3e990b63596881cd19e6&v=4" alt="Lord Valhalla Banner">
+    <div class="hero-text">
+      <h1>Lord Valhalla</h1>
+      <p>Camisas Geek • Venda direta via Marketplace</p>
+    </div>
+  </header>
+
+<body>
+
+  <section class="container">
+
+    <div class="card">
+      <img src="https://files.catbox.moe/i55vsk.jpg" alt="Berserk">
+      <h3>Berserk</h3>
+      <p>Tamanho: M</p>
+      <p class="price">R$ 10,00</p>
+      <a class="btn" href="https://www.facebook.com/marketplace/item/1599996334549133/" target="_blank">
+        Negociar no Marketplace
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://files.catbox.moe/wrn5px.jpg" alt="Iron Maiden">
+      <h3>Iron Maiden</h3>
+      <p>Tamanho: G</p>
+      <p class="price">R$ 10,00</p>
+      <a class="btn" href="https://www.facebook.com/marketplace/item/1599996334549133/" target="_blank">
+        Negociar no Marketplace
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://files.catbox.moe/wenx7v.jpg" alt="Slipknot">
+      <h3>Slipknot</h3>
+      <p>Tamanho: M</p>
+      <p class="price">R$ 10,00</p>
+      <a class="btn" href="https://www.facebook.com/marketplace/item/1599996334549133/" target="_blank">
+        Negociar no Marketplace
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://files.catbox.moe/b4hqud.jpg" alt="Korn">
+      <h3>Korn</h3>
+      <p>Tamanho: G</p>
+      <p class="price">R$ 10,00</p>
+      <a class="btn" href="https://www.facebook.com/marketplace/item/1599996334549133/" target="_blank">
+        Negociar no Marketplace
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://files.catbox.moe/ukrzh6.jpg" alt="Bullet For My Valentine">
+      <h3>Bullet For My Valentine</h3>
+      <p>Tamanho: P</p>
+      <p class="price">R$ 10,00</p>
+      <a class="btn" href="https://www.facebook.com/marketplace/item/1599996334549133/" target="_blank">
+        Negociar no Marketplace
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://files.catbox.moe/bnhrc8.jpg" alt="Suicide Silence">
+      <h3>Suicide Silence</h3>
+      <p>Tamanho: P</p>
+      <p class="price">R$ 10,00</p>
+      <a class="btn" href="https://www.facebook.com/marketplace/item/1599996334549133/" target="_blank">
+        Negociar no Marketplace
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://files.catbox.moe/g38qck.jpg" alt="Linkin Park">
+      <h3>Linkin Park</h3>
+      <p>Tamanho: M</p>
+      <p class="price">R$ 10,00</p>
+      <a class="btn" href="https://www.facebook.com/marketplace/item/1599996334549133/" target="_blank">
+        Negociar no Marketplace
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://files.catbox.moe/pwc7xk.jpg" alt="Mayhem">
+      <h3>Mayhem</h3>
+      <p>Tamanho: P</p>
+      <p class="price">R$ 10,00</p>
+      <a class="btn" href="https://www.facebook.com/marketplace/item/1599996334549133/" target="_blank">
+        Negociar no Marketplace
+      </a>
+    </div>
+
+      <div class="card">
+      <img src="https://raw.githubusercontent.com/LordValhallaa/Lord-Valhalla-IMG/refs/heads/main/sepulturathebrasil.jpg" alt="Sepultura">
+      <h3>Sepultura</h3>
+      <p>Tamanho: M</p>
+      <p class="price">R$ 10,00</p>
+      <a class="btn" href="https://www.facebook.com/marketplace/item/1599996334549133/" target="_blank">
+        Negociar no Marketplace
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    © Lord Valhalla • Venda independente
+  </footer>
+
+</body>
+</html>
